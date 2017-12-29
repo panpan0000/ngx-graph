@@ -78,11 +78,12 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.selectChart(this.chartType);
 
-    setInterval(this.updateData.bind(this), 1000);
+   // setInterval(this.updateData.bind(this), 1000);
 
     if (!this.fitContainer) {
       this.applyDimensions();
     }
+	console.log("hierarchialGraph.nodes",this.hierarchialGraph.nodes);
   }
 
   updateData() {
